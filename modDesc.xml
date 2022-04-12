@@ -126,7 +126,7 @@ Liste des remorques et plateaux compatibles :
     </description>
 	
 <!-- MULTIPLAYER CURRENTLY DISABLED until the object synchronisation bug in v1.3.0.0 has been resolved -->
-	<multiplayer supported="true" />
+	<multiplayer supported="false" />
 	<iconFilename>modIcon.dds</iconFilename>
 
     <extraSourceFiles>
