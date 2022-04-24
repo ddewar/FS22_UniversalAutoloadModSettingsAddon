@@ -6,7 +6,7 @@ addModEventListener(UniversalAutoloadModSettingsAddonManager)
 
 function UniversalAutoloadModSettingsAddonManager:loadMap(name)
     if g_modIsLoaded["FS22_UniversalAutoload"] then
-        UniversalAutoloadModSettingsAddonManager.userModSettingsExists = fileExists(getUserProfileAppPath()..UniversalAutoload.userModSettingsPath)
+        UniversalAutoloadModSettingsAddonManager.userModSettingsExists = fileExists(getUserProfileAppPath()..UniversalAutoloadModSettingsAddonManager.userModSettingsPath)
         if UniversalAutoloadModSettingsAddonManager.userModSettingsExists then
             print("  USER MODSETTING VEHICLES:")
             local userModSettingsFile = Utils.getFilename(UniversalAutoloadModSettingsAddonManager.userModSettingsPath, getUserProfileAppPath())
