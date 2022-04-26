@@ -10,7 +10,7 @@ function UniversalAutoloadModSettingsAddonManager:loadMap(name)
         if UniversalAutoloadModSettingsAddonManager.userModSettingsExists then
             print("  USER MODSETTING VEHICLES:")
             local userModSettingsFile = Utils.getFilename(UniversalAutoloadModSettingsAddonManager.userModSettingsPath, getUserProfileAppPath())
-            UniversalAutoload.ImportVehicleConfigurations(userModSettingsFile)
+            FS22_UniversalAutoload.UniversalAutoload.ImportVehicleConfigurations(userModSettingsFile)
         else
             print("Creating Universal Autoload modSettings user settings file.")
             copyFile(Utils.getFilename("config/UniversalAutoload.xml", UniversalAutoloadModSettingsAddonManager.path), Utils.getFilename(UniversalAutoloadModSettingsAddonManager.userModSettingsPath, getUserProfileAppPath()), false);
